@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-NerdStore.WebApp.MVC-428DD58A-96E6-4118-970D-1192840F6DA0</UserSecretsId>
   </PropertyGroup>
@@ -22,6 +21,12 @@
     <ProjectReference Include="..\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj" />
     <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />
     <ProjectReference Include="..\NerdStoreCatalogo.Data\NerdStoreCatalogo.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\AdminProdutos\" />
+    <Folder Include="Views\Vitrine\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
