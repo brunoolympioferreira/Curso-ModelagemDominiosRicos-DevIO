@@ -1,5 +1,5 @@
-﻿using NerdStore.Core.DomainObjects;
-using System.ComponentModel.DataAnnotations;
+﻿using FluentValidation.Results;
+using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Vendas.Domain
 {
@@ -39,17 +39,17 @@ namespace NerdStore.Vendas.Domain
             _pedidoItems = new List<PedidoItem>();
         }
 
-        //public ValidationResult AplicarVoucher(Voucher voucher)
-        //{
-        //    var validationResult = voucher.ValidarSeAplicavel();
-        //    if (!validationResult.IsValid) return validationResult;
+        public ValidationResult AplicarVoucher(Voucher voucher)
+        {
+            var validationResult = voucher.ValidarSeAplicavel();
+            if (!validationResult.IsValid) return validationResult;
 
-        //    Voucher = voucher;
-        //    VoucherUtilizado = true;
-        //    CalcularValorPedido();
+            Voucher = voucher;
+            VoucherUtilizado = true;
+            CalcularValorPedido();
 
-        //    return validationResult;
-        //}
+            return validationResult;
+        }
 
         public void CalcularValorPedido()
         {
