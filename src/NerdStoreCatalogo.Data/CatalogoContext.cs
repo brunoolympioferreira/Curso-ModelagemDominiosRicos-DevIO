@@ -3,7 +3,7 @@ using NerdStore.Catalogo.Domain;
 using NerdStore.Core.Data;
 using NerdStore.Core.Messages;
 
-namespace NerdStoreCatalogo.Data
+namespace NerdStore.Catalogo.Data
 {
     public class CatalogoContext : DbContext, IUnitOfWork
     {
