@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using System;
+using FluentValidation;
 using NerdStore.Core.Messages;
 
 namespace NerdStore.Vendas.Application.Commands
@@ -35,5 +36,5 @@ namespace NerdStore.Vendas.Application.Commands
         }
     }
 
-
+    
 }

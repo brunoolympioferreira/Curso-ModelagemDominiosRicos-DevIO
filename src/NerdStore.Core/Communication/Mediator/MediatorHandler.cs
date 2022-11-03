@@ -4,11 +4,11 @@ using NerdStore.Core.Messages.CommonMessages.Notifications;
 
 namespace NerdStore.Core.Communication.Mediator
 {
-    public class MediatrHandler : IMediatorHandler
+    public class MediatorHandler : IMediatorHandler
     {
         private readonly IMediator _mediator;
 
-        public MediatrHandler(IMediator mediator)
+        public MediatorHandler(IMediator mediator)
         {
             _mediator = mediator;
         }

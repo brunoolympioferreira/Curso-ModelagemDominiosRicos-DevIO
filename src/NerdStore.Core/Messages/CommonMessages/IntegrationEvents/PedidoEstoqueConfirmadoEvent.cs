@@ -1,4 +1,5 @@
-﻿using NerdStore.Core.DomainObjects.DTO;
+﻿using System;
+using NerdStore.Core.DomainObjects.DTO;
 
 namespace NerdStore.Core.Messages.CommonMessages.IntegrationEvents
 {
